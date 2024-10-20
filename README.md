@@ -6,7 +6,11 @@ In this project we aim to enhance the splatter image rendering by introducing a 
   - [Target Splatter Image](#target-splatter-image)
   - [Normalization](#normalization)
   - [Loss Function](#loss-function)
+
+- [Installation](#Installation)
+- [Dataset](#Training)
 - [Training](#Training)
+
 - [Results](#Results)
 
 ## Introduction:
@@ -20,10 +24,30 @@ Before calculating the loss, the channels (e.g., xyz, scaling) from the predicte
 
 ### Loss Function:
 The custom loss function is defined as: 
-$Total$ $Loss$ = $Base$ $Loss$ &plus;  &lambda; &times; $New$ $Loss$
+L<sub>total</sub> = L<sub>base</sub> &plus;  &lambda; &times; L<sub>new</sub>
+
+&lambda;: at the first 3k iteration of the model &lambda; = 0 afterwards &lambda; will be increased.
 
 Which new loss defined as: 
-$\Sigma_{channel &in; channels}  x_i$
+$\Sigma_{c &in; all\O} $
+$mean$( O<sub>target</sub>(c<sub>current</sub> &minus; c<sub>target</sub>)<sup>2</sup>)
+- Which c represent channel in the current reconstruction of the model.
+- O opacity of the current reconstruction
+- O<sub>target</sub> represent the target opacity
+
+The idea behind multiplying with target opacity is to **reduce noise in invisible Regions** and to **focus on key features**.
+## Installation: 
+- follow the instructions on the original repository [Splatter Image Repository](https://github.com/szymanowiczs/splatter-image.git)
+## Dataset:
+- We used 20% of data from the SRNcars Datasets 
+- The target reconstruction are saved on the drive but also you can create them by uncomment the lines in eval.py in the section save target reconstruction and run the file. **NOTE: make sure to change the dataset you want to train on to the name of train_test so in evaluation you can create the target reconstruction based on the training data.**
+- the dataset that we trained on is also saved on our drive.
+## Training:
+- Both models were trained on T4(Google Colab)
+- Both models were trained for 15,000 iterations.
+- Used batch size is 4. 
+- 
+
 
 
 
