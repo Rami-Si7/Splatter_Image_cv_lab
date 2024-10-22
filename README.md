@@ -16,7 +16,7 @@ In this project we aim to enhance the splatter image rendering by introducing a 
   - [Image Visualisation](#Image-Visualisation)
   - [3D Visualisation](#3D-Visualisation)
     
-- [Conclusions](#conclusion)
+- [Conclusions](#Conclusion)
 
 ## Introduction:
   Splatter image rendering is a technique used for high-quality image generation by modeling object surfaces with Gaussian splats. This project aims to introduce an enhancement to this method by utilizing a new loss function that compares predicted splatter images to a desired 'target' splatter image, thereby providing better supervision for training deep models. This supervised learning approach improve the quality of the generated images.
