@@ -77,6 +77,7 @@ Here are the reuslts of trainging the base and our model. As we can see our mode
 | 3           | ![Base Model 3](base_model_3_url) | ![Our Model 3](our_model_3_url) | ![GT 3](gt_3_url) |
 | 4           | ![Base Model 4](base_model_4_url) | ![Our Model 4](our_model_4_url) | ![GT 4](gt_4_url) |
 
+### 3D Visualisation:
 
 ## Conclusions:
  Incorporating an additional loss during training shows that our model outperforms the base model in perceptual quality, as seen in the LPIPS and SSIM metrics. It generates images closer to the ground truth, with significant improvements in both conditional and novel settings. However, the base model performs better in PSNR, indicating slightly higher pixel-level accuracy.
