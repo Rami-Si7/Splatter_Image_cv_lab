@@ -15,6 +15,7 @@ In this project we aim to enhance the splatter image rendering by introducing a 
   - [Table](#table)
   - [Image Visualisation](#img-vis)
   - [3D Visualisation](#3D-vis)
+    
 - [Conclusions](#conc)
 
 ## Introduction:
