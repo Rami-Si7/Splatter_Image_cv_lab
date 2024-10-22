@@ -15,6 +15,7 @@ In this project we aim to enhance the splatter image rendering by introducing a 
   - [Table](#table)
   - [Image Visualisation](#img-vis)
   - [3D Visualisation](#3D-vis)
+- [Conclusions](#conc)
 
 ## Introduction:
   Splatter image rendering is a technique used for high-quality image generation by modeling object surfaces with Gaussian splats. This project aims to introduce an enhancement to this method by utilizing a new loss function that compares predicted splatter images to a desired 'target' splatter image, thereby providing better supervision for training deep models. This supervised learning approach improve the quality of the generated images.
@@ -76,6 +77,10 @@ Here are the reuslts of trainging the base and our model. As we can see our mode
 | 2           | ![Base Model 2](base_model_2_url) | ![Our Model 2](our_model_2_url) | ![GT 2](gt_2_url) |
 | 3           | ![Base Model 3](base_model_3_url) | ![Our Model 3](our_model_3_url) | ![GT 3](gt_3_url) |
 | 4           | ![Base Model 4](base_model_4_url) | ![Our Model 4](our_model_4_url) | ![GT 4](gt_4_url) |
+
+
+## Conclusions:
+ Incorporating an additional loss during training shows that our model outperforms the base model in perceptual quality, as seen in the LPIPS and SSIM metrics. It generates images closer to the ground truth, with significant improvements in both conditional and novel settings. However, the base model performs better in PSNR, indicating slightly higher pixel-level accuracy.
 
 
 
