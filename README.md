@@ -69,7 +69,6 @@ Here are the reuslts of trainging the base and our model. As we can see our mode
 
 
 ### Image Visualisation:
-## Comparison Table:
 
 | Example No. | Base Model | Our Model  | Ground Truth (GT) |
 | ----------- | ---------- | ---------- | ----------------- |
