@@ -36,11 +36,11 @@ L<sub>total</sub> = L<sub>base</sub> &plus;  &lambda; &times; L<sub>new</sub>
 Which new loss defined as: 
 $\Sigma_{c &in; all\O} $
 $mean$( O<sub>target</sub>(c<sub>current</sub> &minus; c<sub>target</sub>)<sup>2</sup>)
-- Which c represent channel in the current reconstruction of the model.
-- O opacity of the current reconstruction
-- O<sub>target</sub> represent the target opacity
+- Which c represent channel in the current reconstruction of the model (e.g., xyz, opacity, rotation).
+- O: opacity of the current reconstruction
+- O<sub>target</sub>: represent the target opacity
 
-The idea behind multiplying with target opacity is to **reduce noise in invisible Regions** and to **focus on key features**.
+The idea behind multiplying with target opacity is to ensure that only the more emphasised parts of the ground truth image contributes strongly to the loss.
 ## Installation: 
 - follow the instructions on the original repository [Splatter Image Repository](https://github.com/szymanowiczs/splatter-image.git)
 ## Dataset:
@@ -51,9 +51,9 @@ The idea behind multiplying with target opacity is to **reduce noise in invisibl
   
 ## Training:
 - Both models were trained on T4(Google Colab)
-- Both models were trained for 8,000 iterations.
+- Both models were trained for 15,000 iterations.
 - Used batch size is 4.
-- cfg.data.input_images = 2.
+- cfg.data.input_images = 1.
 
 ## Results:
 ### Table:
@@ -61,12 +61,12 @@ The idea behind multiplying with target opacity is to **reduce noise in invisibl
 Here are the reuslts of trainging the base and our model. As we can see our model outperformed the base model in LPIPS and SSIM metrics. but not in PSNR.
 | Metric        | Base Model | Our Model  |
 | ------------- | ---------- | ---------- |
-| LPIPS_cond  ↓ | 0.17512    | 0.1575     |
-| LPIPS_novel ↓ | 0.26108    | 0.2101     |
-| SSIM_cond ↑   | 0.90609    | 0.8931     |
-| SSIM_novel ↑  | 0.84478    | 0.8455     |
-| PSNR_cond  ↑  | 23.9634    | 23.0409    |
-| PSNR_novel ↑  | 20.47619   | 20.115     |
+| LPIPS_cond  ↓ | 0.12593    | 0.12692    |
+| LPIPS_novel ↓ | 0.2434     | 0.21553    |
+| SSIM_cond ↑   | 0.93443    | 0.93428    |
+| SSIM_novel ↑  | 0.84434    | 0.8466     |
+| PSNR_cond  ↑  | 26.15599   | 25.94715   |
+| PSNR_novel ↑  | 19.97051   | 19.87617   |
 
 
 ### Image Visualisation:
