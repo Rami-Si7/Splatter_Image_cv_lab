@@ -37,8 +37,8 @@ Which new loss defined as:
 $\Sigma_{c &in; all\O} $
 $mean$( O<sub>target</sub>(c<sub>current</sub> &minus; c<sub>target</sub>)<sup>2</sup>)
 - Which c represent channel in the current reconstruction of the model (e.g., xyz, opacity, rotation).
-- O: opacity of the current reconstruction
-- O<sub>target</sub>: represent the target opacity
+- O - opacity of the current reconstruction
+- O<sub>target</sub> - represent the target opacity
 
 The idea behind multiplying with target opacity is to ensure that only the more emphasised parts of the ground truth image contributes strongly to the loss.
 ## Installation: 
