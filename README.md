@@ -131,9 +131,7 @@ As we can see from this results, our model succeeded more on capturing more clea
 ### Graphs:
 | Training loss | New loss | Base loss | Additional Column |
 |---------------|----------|-----------|--------------------|
-| ![tl](Results/Losses/training_loss.png) |![bl](Results/Losses/New_loss.png)          |   ![nl](Results/Losses/base_loss.png)        |       ![tl](Results/Losses/custom_lambda.png)             |
-|               |          |           |                    |
-|               |          |           |                    |
+| ![tl](Results/Losses/training_loss.png) |![bl](Results/Losses/New_loss.png)|![nl](Results/Losses/base_loss.png)|![tl](Results/Losses/custom_lambda.png)|
 
 
 
