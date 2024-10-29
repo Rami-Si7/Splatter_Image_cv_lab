@@ -1,5 +1,5 @@
 # Splatter Image - Supervise by desired splatter image
-In this project we aim to enhance the splatter image rendering by introducing a new loss function that incorporates supervision from a 'target' splatter image The new loss function is designed to improve learning by leveraging multi-view data and comparing reconstructions with the desired target image, thereby guiding the model towards better predictions.
+In this project we aim to enhance the splatter image rendering by introducing a new loss function that incorporates supervision from a Ground Truth splatter image. The new loss function is designed to improve learning by utilising weighting the loss by the opacity of Ground truth splatter image pixels. thereby guiding the model towards better predictions.
 ## Table of Contents:
 - [Introduction](#Introduction)
 - [New Loss Function](#new-loss-function)
@@ -21,9 +21,9 @@ In this project we aim to enhance the splatter image rendering by introducing a 
 ## Introduction:
   Splatter image rendering is a technique used for high-quality image generation by modeling object surfaces with Gaussian splats. This project aims to introduce an enhancement to this method by utilizing a new loss function that compares predicted splatter images to a desired 'target' splatter image, thereby providing better supervision for training deep models. This supervised learning approach improve the quality of the generated images.
 ## New loss fucntion:
-  The new loss function introduced in this project is designed to provide better supervision to the model by comparing the predicted splatter images to a 'target' splatter image generated from multi-view data. This loss function is a combination of multiple components, each designed to measure the differences between the predicted and target images for different channels (e.g., xyz, opacity).
+  The new loss function introduced in this project is designed to provide better supervision to the model by comparing the predicted splatter images to a GT or 'target' splatter image generated from one-view set. This loss function is a combination of multiple components, each designed to measure the differences between the predicted and target images for different channels (e.g., xyz, opacity).
 ### Target Splatter image:
-  we created the target splatter image reconstrucntion by using two views. The idea is to use it as ground truth reconstruction and to comapre it with the generated reconstruction of the model. by using it we aim to enhance the model performance.
+  We created the target splatter image reconstrucntion by using only one view. The idea is to use it as ground truth reconstruction and to comapre it with the generated reconstruction of the model to improve the model performance.
 ### Normalization:
 Before calculating the loss, the channels (e.g., xyz, scaling) from the predicted and target images are normalized using min-max normalization. This ensures that the values are within a consistent range between 0 and 1.
 
@@ -31,7 +31,7 @@ Before calculating the loss, the channels (e.g., xyz, scaling) from the predicte
 The custom loss function is defined as: 
 L<sub>total</sub> = L<sub>base</sub> &plus;  &lambda; &times; L<sub>new</sub>
 
-&lambda;: we set lambda to 0.01
+&lambda;: is dynamically changed across training
 
 Which new loss defined as: 
 $\Sigma_{c &in; all\O} $
