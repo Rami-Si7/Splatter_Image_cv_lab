@@ -57,9 +57,14 @@ The idea behind multiplying with target opacity is to ensure that only the more 
 - cfg.data.input_images = 1.
 
 ## Results:
-### Table:
 
-Here are the reuslts of trainging the base and our model. As we can see our model outperformed the base model in LPIPS and SSIM metrics. but not in PSNR. Although they are very close.
+- Here are the reuslts of trainging the base and our model. As we can see our model outperformed the base model in LPIPS and SSIM metrics. but not in PSNR, although they are very close.
+- In our model the &lambda;'s value changed dynamically across training. For the first 3,000 iteration &lambda; is 0, means that we literally traning the base model for 3,000 iterations. For the remaining of training lambda startet at 0.03, it got higher as the training progresses till it reached value of 0.1.
+- The idea behind this staregy is that at early stages of training we give the base model absolute dominance, and as training progress we start fine-tune the model by giving the new loss importance, and as training progresses the new loss will contribute more.
+- The results below can show how the new loss contributed to enhance the base model.
+
+### Table:
+  
 | Metric        | Base Model | Our Model  |
 | ------------- | ---------- | ---------- |
 | LPIPS_cond  ↓ | 0.12593    | 0.12692    |
@@ -124,7 +129,7 @@ As we can see from this results, our model succeeded more on capturing more clea
 
 
 ## Conclusions:
- Incorporating the additional new loss during training shows that our model outperforms the base model in perceptual quality,as seen in the LPIPS and SSIM metrics. Regardless that the base model outpeformed on PSNR metrics. Our model generates images closer to the ground truth, with significant improvements on clarity and quality of the rendered images.
+ Incorporating the additional new loss during training shows that our model outperforms the base model in perceptual quality,as seen in the LPIPS and SSIM metrics. Regardless that the base model outpeformed on PSNR metrics. Our model still generates images closer to the ground truth, with significant improvements on clarity, sharpness and quality of the rendered images.
 
 
 
