@@ -72,7 +72,7 @@ Here are the reuslts of trainging the base and our model. As we can see our mode
 
 ### Image Visualisation:
 
-Car - 1
+### Car - 1
 
 | Pose No.    | Base Model | Our Model  | Ground Truth (GT) |
 | ----------- | ---------- | ---------- | ----------------- |
@@ -81,6 +81,36 @@ Car - 1
 | 3           | ![Base Model 3](Results/car_1/pose_3_base.png) | ![Our Model 3](Results/car_1/pose_3_our.png) | ![GT 3](Results/car_1/pose_3_gt.png) |
 | 4           | ![Base Model 4](Results/car_1/pose_4_base.png) | ![Our Model 4](Results/car_1/pose_4_our.png) | ![GT 4](Results/car_1/pose_4_gt.png) |
 | 5           | ![Base Model 4](Results/car_1/pose_5_base.png) | ![Our Model 4](Results/car_1/pose_5_our.png) | ![GT 4](Results/car_1/pose_5_gt.png) |
+
+### Car - 2
+
+| Pose No.    | Base Model | Our Model  | Ground Truth (GT) |
+| ----------- | ---------- | ---------- | ----------------- |
+| 1           | ![Base Model 1](Results/car_2/pose_1_base.png) | ![Our Model 1](Results/car_2/pose_1_our.png) | ![GT 1](Results/car_2/pose_1_gt.png) |
+| 2           | ![Base Model 2](Results/car_2/pose_2_base.png) | ![Our Model 2](Results/car_2/pose_2_our.png) | ![GT 2](Results/car_2/pose_2_gt.png) |
+| 3           | ![Base Model 3](Results/car_2/pose_3_base.png) | ![Our Model 3](Results/car_2/pose_3_our.png) | ![GT 3](Results/car_2/pose_3_gt.png) |
+| 4           | ![Base Model 4](Results/car_2/pose_4_base.png) | ![Our Model 4](Results/car_2/pose_4_our.png) | ![GT 4](Results/car_2/pose_4_gt.png) |
+| 5           | ![Base Model 4](Results/car_2/pose_5_base.png) | ![Our Model 4](Results/car_2/pose_5_our.png) | ![GT 4](Results/car_2/pose_5_gt.png) |
+
+### Car - 3
+
+| Pose No.    | Base Model | Our Model  | Ground Truth (GT) |
+| ----------- | ---------- | ---------- | ----------------- |
+| 1           | ![Base Model 1](Results/car_3/pose_1_base.png) | ![Our Model 1](Results/car_3/pose_1_our.png) | ![GT 1](Results/car_3/pose_1_gt.png) |
+| 2           | ![Base Model 2](Results/car_3/pose_2_base.png) | ![Our Model 2](Results/car_3/pose_2_our.png) | ![GT 2](Results/car_3/pose_2_gt.png) |
+| 3           | ![Base Model 3](Results/car_3/pose_3_base.png) | ![Our Model 3](Results/car_3/pose_3_our.png) | ![GT 3](Results/car_3/pose_3_gt.png) |
+| 4           | ![Base Model 4](Results/car_3/pose_4_base.png) | ![Our Model 4](Results/car_3/pose_4_our.png) | ![GT 4](Results/car_3/pose_4_gt.png) |
+| 5           | ![Base Model 4](Results/car_3/pose_5_base.png) | ![Our Model 4](Results/car_3/pose_5_our.png) | ![GT 4](Results/car_3/pose_5_gt.png) |
+
+### Car - 4
+
+| Pose No.    | Base Model | Our Model  | Ground Truth (GT) |
+| ----------- | ---------- | ---------- | ----------------- |
+| 1           | ![Base Model 1](Results/car_4/pose_1_base.png) | ![Our Model 1](Results/car_4/pose_1_our.png) | ![GT 1](Results/car_4/pose_1_gt.png) |
+| 2           | ![Base Model 2](Results/car_4/pose_2_base.png) | ![Our Model 2](Results/car_4/pose_2_our.png) | ![GT 2](Results/car_4/pose_2_gt.png) |
+| 3           | ![Base Model 3](Results/car_4/pose_3_base.png) | ![Our Model 3](Results/car_4/pose_3_our.png) | ![GT 3](Results/car_4/pose_3_gt.png) |
+| 4           | ![Base Model 4](Results/car_4/pose_4_base.png) | ![Our Model 4](Results/car_4/pose_4_our.png) | ![GT 4](Results/car_4/pose_4_gt.png) |
+| 5           | ![Base Model 4](Results/car_4/pose_5_base.png) | ![Our Model 4](Results/car_4/pose_5_our.png) | ![GT 4](Results/car_4/pose_5_gt.png) |
 
 ### 3D Visualisation:
 
