@@ -116,10 +116,10 @@ As we can see from this results, our model succeeded more on capturing more clea
 ### 3D Visualization:
 | Car No. | Base Model | Our Model | Ground Truth (GT) |
 | ------- | ---------- | --------- | ----------------- |
-| 1       | [![Base Model 1](Results/car_1/vid_base.gif)] | [![Our Model 1](Results/car_1/vid_our.gif)] | [![GT 1](Results/car_1/vid_gt.gif)] |
-| 2       | [![Base Model 2](Results/car_2/vid_base.gif)] | [![Our Model 2](Results/car_2/vid_our.gif)] | [![GT 2](Results/car_2/vid_gt.gif)] |
-| 3       | [![Base Model 3](Results/car_3/vid_base.gif)] | [![Our Model 3](Results/car_3/vid_our.gif)] | [![GT 3](Results/car_3/vid_gt.gif)] |
-| 4       | [![Base Model 4](Results/car_4/vid_base.gif)] | [![Our Model 4](Results/car_4/vid_our.gif)] | [![GT 4](Results/car_4/vid_gt.gif)] |
+| 1       | ![Base Model 1](Results/car_1/vid_base.gif) | ![Our Model 1](Results/car_1/vid_our.gif) | ![GT 1](Results/car_1/vid_gt.gif) |
+| 2       | ![Base Model 2](Results/car_2/vid_base.gif) | ![Our Model 2](Results/car_2/vid_our.gif) | ![GT 2](Results/car_2/vid_gt.gif) |
+| 3       | ![Base Model 3](Results/car_3/vid_base.gif) | ![Our Model 3](Results/car_3/vid_our.gif) | ![GT 3](Results/car_3/vid_gt.gif) |
+| 4       | ![Base Model 4](Results/car_4/vid_base.gif) | ![Our Model 4](Results/car_4/vid_our.gif) | ![GT 4](Results/car_4/vid_gt.gif) |
 
 
 
