@@ -15,6 +15,7 @@ In this project we aim to enhance the splatter image rendering by introducing a 
   - [Table](#table)
   - [Image Visualisation](#Image-Visualisation)
   - [3D Visualisation](#3D-Visualisation)
+  - [Graphs](#Graphs)
     
 - [Conclusions](#Conclusion)
 
@@ -126,6 +127,13 @@ As we can see from this results, our model succeeded more on capturing more clea
 | 3       | ![Base Model 3](Results/car_3/vid_base.gif) | ![Our Model 3](Results/car_3/vid_our.gif) | ![GT 3](Results/car_3/vid_gt.gif) |
 | 4       | ![Base Model 4](Results/car_4/vid_base.gif) | ![Our Model 4](Results/car_4/vid_our.gif) | ![GT 4](Results/car_4/vid_gt.gif) |
 
+
+### Graphs:
+| Training loss | New loss | Base loss |
+|---------------|----------|-----------|
+|               |          |           |
+|               |          |           |
+|               |          |           |
 
 
 ## Conclusions:
