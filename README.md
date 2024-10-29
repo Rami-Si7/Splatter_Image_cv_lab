@@ -59,7 +59,7 @@ The idea behind multiplying with target opacity is to ensure that only the more 
 ## Results:
 ### Table:
 
-Here are the reuslts of trainging the base and our model. As we can see our model outperformed the base model in LPIPS and SSIM metrics. but not in PSNR.
+Here are the reuslts of trainging the base and our model. As we can see our model outperformed the base model in LPIPS and SSIM metrics. but not in PSNR. Although they are very close.
 | Metric        | Base Model | Our Model  |
 | ------------- | ---------- | ---------- |
 | LPIPS_cond  ↓ | 0.12593    | 0.12692    |
@@ -112,6 +112,7 @@ Here are the reuslts of trainging the base and our model. As we can see our mode
 | 4           | ![Base Model 4](Results/car_4/pose_4_base.png) | ![Our Model 4](Results/car_4/pose_4_our.png) | ![GT 4](Results/car_4/pose_4_gt.png) |
 | 5           | ![Base Model 4](Results/car_4/pose_5_base.png) | ![Our Model 4](Results/car_4/pose_5_our.png) | ![GT 4](Results/car_4/pose_5_gt.png) |
 
+As we can see from this results, our model succeeded more on capturing more clear and sharper details, in other words using the new loss function that utilities opacity weighting has really enhanced the base model 
 ### 3D Visualization:
 | Car No. | Base Model | Our Model | Ground Truth (GT) |
 | ------- | ---------- | --------- | ----------------- |
@@ -123,7 +124,7 @@ Here are the reuslts of trainging the base and our model. As we can see our mode
 
 
 ## Conclusions:
- Incorporating an additional loss during training shows that our model outperforms the base model in perceptual quality, as seen in the LPIPS and SSIM metrics. It generates images closer to the ground truth, with significant improvements in both conditional and novel settings. However, the base model performs better in PSNR, indicating slightly higher pixel-level accuracy.
+ Incorporating the additional new loss during training shows that our model outperforms the base model in perceptual quality,as seen in the LPIPS and SSIM metrics. Regardless that the base model outpeformed on PSNR metrics. Our model generates images closer to the ground truth, with significant improvements on clarity and quality of the rendered images.
 
 
 
