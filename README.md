@@ -113,6 +113,13 @@ Here are the reuslts of trainging the base and our model. As we can see our mode
 | 5           | ![Base Model 4](Results/car_4/pose_5_base.png) | ![Our Model 4](Results/car_4/pose_5_our.png) | ![GT 4](Results/car_4/pose_5_gt.png) |
 
 ### 3D Visualisation:
+| Car No.    | Base Model | Our Model  | Ground Truth (GT) |
+| ----------- | ---------- | ---------- | ----------------- |
+| 1           | ![Base Model 1](Results/car_1/vid_base.png) | ![Our Model 1](Results/car_1/vid_our.png) | ![GT 1](Results/car_1/vid_gt.png) |
+| 2           | ![Base Model 2](Results/car_2/vid_base.png) | ![Our Model 2](Results/car_2/vid_our.png) | ![GT 2](Results/car_2/vid_gt.png) |
+| 3           | ![Base Model 3](Results/car_3/vid_base.png) | ![Our Model 3](Results/car_3/vid_our.png) | ![GT 3](Results/car_3/vid_gt.png) |
+| 4           | ![Base Model 4](Results/car_4/vid_base.png) | ![Our Model 4](Results/car_4/vid_our.png) | ![GT 4](Results/car_4/vid_gt.png) |
+
 
 
 ## Conclusions:
