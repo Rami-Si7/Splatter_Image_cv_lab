@@ -74,7 +74,7 @@ Here are the reuslts of trainging the base and our model. As we can see our mode
 
 | Example No. | Base Model | Our Model  | Ground Truth (GT) |
 | ----------- | ---------- | ---------- | ----------------- |
-| 1           | ![Base Model 1](base_model_1_url) | ![Our Model 1](our_model_1_url) | ![GT 1](gt_1_url) |
+| 1           | ![Base Model 1](Results/car_1/pose_1_base.png) | ![Our Model 1](our_model_1_url) | ![GT 1](gt_1_url) |
 | 2           | ![Base Model 2](base_model_2_url) | ![Our Model 2](our_model_2_url) | ![GT 2](gt_2_url) |
 | 3           | ![Base Model 3](base_model_3_url) | ![Our Model 3](our_model_3_url) | ![GT 3](gt_3_url) |
 | 4           | ![Base Model 4](base_model_4_url) | ![Our Model 4](our_model_4_url) | ![GT 4](gt_4_url) |
