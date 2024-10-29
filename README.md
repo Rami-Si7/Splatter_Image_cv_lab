@@ -72,6 +72,8 @@ Here are the reuslts of trainging the base and our model. As we can see our mode
 
 ### Image Visualisation:
 
+Car - 1
+
 | Pose No.    | Base Model | Our Model  | Ground Truth (GT) |
 | ----------- | ---------- | ---------- | ----------------- |
 | 1           | ![Base Model 1](Results/car_1/pose_1_base.png) | ![Our Model 1](Results/car_1/pose_1_our.png) | ![GT 1](Results/car_1/pose_1_gt.png) |
