@@ -129,11 +129,12 @@ As we can see from this results, our model succeeded more on capturing more clea
 
 
 ### Graphs:
-| Training loss | New loss | Base loss |
-|---------------|----------|-----------|
-|               |          |           |
-|               |          |           |
-|               |          |           |
+| Training loss | New loss | Base loss | Additional Column |
+|---------------|----------|-----------|--------------------|
+| ![tl](Results/Losses/Training_loss.png)              |          |           |                    |
+|               |          |           |                    |
+|               |          |           |                    |
+
 
 
 ## Conclusions:
