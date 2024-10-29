@@ -8,25 +8,20 @@ import torch
 import math
 from torch.utils.data import DataLoader
 from torch.utils.data import Sampler
-
 from lightning.fabric import Fabric
-
 from ema_pytorch import EMA
 from omegaconf import DictConfig, OmegaConf
-
 from utils.general_utils import safe_state
 from utils.loss_utils import l1_loss, l2_loss
 import lpips as lpips_lib
-
 from eval import evaluate_dataset
 from gaussian_renderer import render_predicted
 from scene.gaussian_predictor import GaussianSplatPredictor
 from datasets.dataset_factory import get_dataset
 from torch.utils.data import DataLoader, SequentialSampler
-
-
 from torch.utils.data import Dataset
 class TargetReconstructionDataset(Dataset):
+    
     """
     Dataset class for loading target reconstructions from folders.
     Each folder contains one sample's reconstruction.
@@ -50,7 +45,6 @@ class TargetReconstructionDataset(Dataset):
             reconstruction_data = None  # Handle missing data if necessary
 
         return folder_name, reconstruction_data
-
 
 
 def get_reconstruction_dataloader(target_dir, batch_size, num_workers=0):
