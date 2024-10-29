@@ -43,9 +43,10 @@ $mean$( O<sub>target</sub>(c<sub>current</sub> &minus; c<sub>target</sub>)<sup>2
 The idea behind multiplying with target opacity is to ensure that only the more emphasised parts of the ground truth image contributes strongly to the loss.
 ## Installation: 
 - follow the instructions on the original repository [Splatter Image Repository](https://github.com/szymanowiczs/splatter-image.git)
+- To set your own Ground truth splatter images please go to train_network.py, search for the variable target_dataset and set the path to you GT-SI, make sure that it contains folders of the name of sample id and in each folder is the reconstruction with type .pt.
 ## Dataset:
 - We used 20% of data from the SRNcars Datasets 
-- The target reconstruction are saved on the drive but also you can create them by uncomment the lines in eval.py in the section save target reconstruction and run the file.
+- Our target reconstruction are saved on the drive but also you can create them by uncomment the lines in eval.py in the section save target reconstruction and run the file.
 - **NOTE: make sure that the dataset folder's name that you want to use during training is cars_train.**
 - - **NOTE: To create Splatter image target to use during training, you should change the folder's name that contains the dataset to cars_test and run eval.py**
   
